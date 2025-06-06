@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Smart Form Filler",
+  "version": "1.0",
+  "permissions": ["scripting", "storage", "activeTab"],
+  "host_permissions": ["https://docs.google.com/forms/*"],
+  "background": {
+    "service_worker": "src/background.ts"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://docs.google.com/forms/*"],
+      "js": ["src/content.ts"],
+      "run_at": "document_idle",
+      "type": "module"
+    }
+  ]
+}
