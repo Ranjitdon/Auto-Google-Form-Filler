@@ -1,4 +1,4 @@
-# 🧠 AI Autofill Chrome Extension
+# AI Autofill Chrome Extension
 
 A Chrome Extension that reads a resume, interacts with Gemini API (Google's generative language model), and automatically answers form questions with smart, context-aware suggestions.
 
@@ -24,7 +24,3 @@ git clone https://github.com/Ranjitdon/Auto-Google-Form-Filler.git
 cd my_extension
 npm install
 npm run build
-
-
-
-
